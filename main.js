@@ -25,7 +25,6 @@ new Swiper('.video-swiper', {
     spaceBetween: 20,
     pagination: {
         el: '.video-pag',
-        clickable: true,
         type: 'fraction'
     },
     navigation: {

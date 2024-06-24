@@ -23,6 +23,10 @@ body {
   @apply text-dark;
 }
 
+/* * { */
+/*   border: 1px solid green; */
+/* } */
+
 .font-monologue {
   font-family: 'Monologue', sans-serif;
 }
