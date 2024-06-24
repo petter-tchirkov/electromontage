@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <main
+        class="bg-[url(/images/hero.png)] md:bg-[url(/images/hero-tablet.png)] xl:bg-[url(/images/hero-desktop.png)] bg-cover min-h-screen bg-top"
+      >
+        <div
+          class="header__wrapper px-4 md:px-9 xl:p-0 xl:max-w-[1200px] xl:mx-auto"
+        >
+          <header
+            class="flex flex-col items-center gap-2 border-b border-b-[#B3B3B3] py-2"
+          >
+            <div class="md:hidden">
+              <div class="flex gap-4 items-center">
+                <img src="/icons/location.svg" alt="" />
+                <span>м. Київ, вул. Озерна, 12а</span>
+              </div>
+              <span class="text-xs"
+                >Пн - Пт: 9:00 - 18:00 Сб: 9:00 - 15:00, Нд: вихдн.</span
+              >
+              <div class="flex gap-4 justify-center">
+                <img src="/icons/phone.svg" alt="" />
+                <img src="/icons/ig.svg" alt="" />
+                <img src="/icons/tg.svg" alt="" />
+              </div>
+            </div>
+            <!-- tablet header -->
+            <div
+              class="hidden md:grid grid-cols-3 grid-rows-2 items-center w-full xl:grid-cols-4"
+            >
+              <p class="text-sm xl:text-base font-semibold">
+                Послуги електромонтажу в м. Київ
+              </p>
+              <div class="flex gap-1 items-center justify-center">
+                <img src="/icons/location.svg" alt="" />
+                <span>м. Київ, вул. Озерна, 12а</span>
+              </div>
+              <div class="flex justify-end gap-2 xl:col-start-4">
+                <img class="w-6 h-6" src="/icons/phone.svg" alt="" />
+                <p class="font-bold">+375 (44) 570-55-84</p>
+              </div>
+              <div
+                class="flex gap-2 xl:col-start-3 xl:self-center xl:row-start-1 xl:justify-center xl:gap-4"
+              >
+                <img class="w-6 h-6" src="/icons/ig.svg" alt="" />
+                <img class="w-6 h-6" src="/icons/tg.svg" alt="" />
+              </div>
+              <div class="xl:hidden"></div>
+              <div class="self-end xl:col-start-4">
+                <p class="text-right">Пн - Пт: 9:00 - 18:00</p>
+                <p class="text-right">Сб: 9:00 - 15:00, Нд: вихідний</p>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div
+          class="article pt-8 mb-10 px-4 md:px-9 xl:px-0 xl:max-w-[1200px] xl:mx-auto"
+        >
+          <h1
+            class="font-monologue text-4xl leading-[120%] uppercase md:text-[70px]"
+          >
+            Послуги<br />електромонтажу
+          </h1>
+          <h2
+            class="font-monologue text-4xl leading-[120%] text-blue uppercase md:text-[70px] md:mb-5"
+          >
+            в м. Київ
+          </h2>
+          <p class="font-semibold w-1/2 md:text-xl md:mb-5 md:w-64">
+            швидко та з гарантією на виконані роботи
+          </p>
+          <p class="text-blue font-semibold md:text-2xl md:w-64 xl:mb-11">
+            В Києві та Київській області
+          </p>
+          <div class="justify-start hidden xl:flex">
+            <button
+              class="uppercase py-6 px-8 bg-[url(/images/cta-bg.png)] bg-cover bg-center font-bold w-full rounded-md shadow-md mb-4 md:w-auto md:px-16"
+            >
+              Замовити електрика
+            </button>
+          </div>
+          <p class="hidden xl:block pl-11">та отримати каталог с цінами</p>
+        </div>
+        <div
+          class="bg-[url(/images/romanov.png)] md:bg-none h-[400px] flex flex-col justify-end items-center bg-no-repeat bg-top bg-cover px-4 mb-3 md:px-9 xl:px-0 xl:max-w-[1200px] xl:mx-auto"
+        >
+          <div class="flex flex-col w-full md:items-end md:h-64 xl:h-96">
+            <div class="bg-white p-1 rounded-md md:w-fit">
+              <article class="border border-[#F4F4F4] rounded-md p-2 shadow-lg">
+                <p class="text-blue font-monologue text-xl mb-1">
+                  Олександр Романов
+                </p>
+                <span>Досвід роботи електриком </span>
+                <span class="font-semibold">- 20 років</span>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 md:flex md:justify-center xl:hidden">
+          <button
+            class="uppercase py-6 px-8 bg-[url(/images/cta-bg.png)] bg-cover bg-center font-bold w-full rounded-md shadow-md mb-4 md:w-auto md:px-16"
+          >
+            Замовити електрика
+          </button>
+        </div>
+        <p class="text-center xl:hidden">та отримати каталог с цінами</p>
+        <!-- hero end -->
+
+      </main>
+      <div class="swiper mb-5">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper pt-10">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="w-56 shadow-sm rounded-md p-1 bg-white mx-auto">
+              <div
+                class="border border-[#f4f4f4] rounded-md p-2 relative pt-20 text-center"
+              >
+                <img
+                  src="/images/slider/1.png"
+                  alt=""
+                  class="absolute -top-12 left-[13%]"
+                />
+                <h3 class="font-semibold text-sm">
+                  Рахуємо до виконання робіт
+                </h3>
+                <p class="text-xs">
+                  при відправці вашого номера телефону, на другому етапі в вас
+                  є можливість додати матеріали - фото, відео, планування на
+                  основі яки ми зробимо прорахунок
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-56 shadow-sm rounded-md p-1 bg-white mx-auto">
+              <div class="border border-[#f4f4f4] rounded-md p-2 relative pt-20 text-center">
+                <img src="/images/slider/2.png" class="absolute -top-6 left-[31%]" alt="" />
+                <h3 class="font-semibold text-sm">Тільки реальні строки</h3>
+                <p class="text-xs">
+                  ми працюємо більше 20 років тому можемо називати реальні
+                  строки та проговорюємо всі моменти до початку роботи
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-56 shadow-sm rounded-md p-1 bg-white mx-auto">
+              <div
+                class="border border-[#f4f4f4] rounded-md p-2 relative pt-20 text-center"
+              >
+                <img
+                  src="/images/slider/3.png"
+                  alt=""
+                  class="absolute -top-12 left-4"
+                />
+                <h3 class="font-semibold text-sm">
+                  Знижки на матеріали від постачальників
+                </h3>
+                <p class="text-xs">
+                  давно на ринку та маємо оптові знижки майже у всіх магазинах
+                  електрики та самі закупаємось погоджуючи ціни з вами
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-56 shadow-sm rounded-md p-1 bg-white mx-auto">
+              <div
+                class="border border-[#f4f4f4] rounded-md p-2 relative pt-20 text-center"
+              >
+                <img
+                  src="/images/slider/4.png"
+                  alt=""
+                  class="absolute -top-12 left-4"
+                />
+                <h3 class="font-semibold text-sm">Працюємо з дизайнерами</h3>
+                <p class="text-xs">
+                  розмовляємо на одній мові з дизайнерами та розуміємо що може
+                  значити відхиленя в 1см
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-56 shadow-sm rounded-md p-1 bg-white mx-auto">
+              <div
+                class="border border-[#f4f4f4] rounded-md p-2 relative pt-20 text-center"
+              >
+                <img
+                  src="/images/slider/5.png"
+                  alt=""
+                  class="absolute -top-12 left-4"
+                />
+                <h3 class="font-semibold text-sm">Працюємо під ключ</h3>
+                <p class="text-xs">
+                  за нами не треба пилососити, вивозити штробу і т.і. Робимо
+                  як для себе
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between px-4">
+        <div class="swiper-prev bg-[#DDDDDD] rounded-3xl gap-3 min-w-28 flex justify-center items-center">
+          <img src="/icons/arrow-left-black.svg" class="w-2" alt="" />
+          <span>Назад</span>
+        </div>
+        <div class="swiper-pag flex justify-center items-center"></div>
+        <div class="swiper-next rounded-3xl p-3 gap-3 bg-[#0C9AE3] min-w-28 flex justify-center items-center" style="box-shadow: 6px 6px 35px rgba(12, 154, 227, 0.4);">
+          <span class="text-white">Далі</span>
+          <img src="/icons/arrow-right-white.svg" class="w-2" alt="" />
+        </div>
+
+      </div>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

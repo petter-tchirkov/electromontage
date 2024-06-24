@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SfProDisplay';
+  src: url('/fonts/SFPRODISPLAYREGULAR.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'SfProDisplayBold';
+  src: url('/fonts/SFPRODISPLAYBOLD.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Monologue';
+  src: url('/fonts/Monologue.ttf') format('truetype'),
+}
+
+html,
+body {
+  font-family: 'SfProDisplay', sans-serif;
+  @apply text-dark;
+}
+
+.font-monologue {
+  font-family: 'Monologue', sans-serif;
+}
